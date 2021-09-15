@@ -1,0 +1,43 @@
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+```{r kable, echo=FALSE}
+if(!require("knitr")) install.packages("knitr")
+library(knitr)
+if(!require("dplyr")) install.packages("dplyr")
+library(dplyr)
+myTable <- tibble(x = c(1.111, 2.222, 3.333),
+                 y = c('one', 'two', 'three'),
+                 z = c(5, 6, 7))
+kable(myTable, caption = 'My Table in Word') 
+```
+
+
+
+```{r regulartable, echo=FALSE}
+if(!require("flextable")) install.packages("flextable")
+library(flextable)
+regulartable(myTable)
+```
+
+
+```{r regulartable.format, echo=FALSE}
+regulartable(myTable) %>%
+   width(width = c(.5, 1.5, 3)) %>%
+   bg(bg = "#000080", part = "header") %>%
+   color(color = "white", part = "header")
+```
+
+Die Bundesagentur für Arbeit hat in Zusammenarbeit mit dem Institut für Arbeitsmarkt- und Berufsforschung und unter Beirat des Arbeitskreises {\textquotedbl}Klassifikation der Berufe 2010{\textquotedbl} die für Deutschland aktuellste Klassifikation der Berufe entwickelt. Diese soll die Besonderheiten des deutschen Arbeitsmarktes erfassen aber gleichzeitig eine hohe Kompatibilität mit der internationalen Berufsklassifikation ISCO-08 aufweisen.~quote[S.~4--5]{BundesagenturfurArbeit.28.09.2010}

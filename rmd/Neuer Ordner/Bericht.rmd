@@ -1,0 +1,244 @@
+---
+title: "Bildungs- und Qualifikationsraum Ruhr 2040"
+author: "Simon Ress"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  word_document: 
+    toc: true
+    toc_depth: 4
+    number_sections: true
+    reference_docx: "template.docx"
+bibliography: Literatur.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+\pagebreak
+
+# Markdown Basic Syntax (später löschen)
+
+Zitate einfügen:
+
+- Syntax: \[@Meil.2016, S. 33-35] 
+- Ergebniss: [@Meil.2016, S. 33-35]
+- Das Literaturverzeichnis wird automatisch angepasst
+
+
+Formatierung ( [Anleitung](https://www.markdownguide.org/basic-syntax/) ):
+
+- **Fett**: \*\*Text\*\*
+- *Kursiv*: \*Text\*
+- Überschriftebene 1: \# Überschrift
+- Überschriftebene 2: \#\# Überschrift
+- Überschriftebene 3: \#\#\# Überschrift
+- ...
+- Links: \[Anzeigetext für Link](http://www.sampleurl.com)
+
+
+Blockquotes:
+```{r Blockquotes, eval=F}
+> Dorothy followed her through many of the beautiful rooms in her castle.
+```
+
+Blockquotes with Multiple Paragraphs
+```{r Blockquotes.multiple, eval=F}
+> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+```
+
+
+Ordered Lists:
+```{r Ordered.Lists, eval=F}
+1. First item
+2. Second item
+3. Third item
+```
+
+
+Unordered Lists:
+```{r Unordered.Lists, eval=F}
+- First item
+- Second item
+- Third item
+```
+
+
+Images:  
+```{r Images, eval=F}
+![Tux, the Linux mascot](URL oder Pfad)
+```
+
+
+Inlinecode:
+```{r Inlinecode, eval=F}
+Einfügen von R Code \in einen Text. Hier z.B. einen Mittelwert `mean(data$variable)`
+```
+
+Codeblocks:
+```{r Codeblocks, echo = F, comment = ""}
+code <- "{r name.of.block, options}
+Codeblock
+"
+
+cat("```", code, "```", sep = "")
+```
+
+Plots:
+```{r Plots, echo = F, comment = ""}
+code <- "{r pressure, echo=FALSE}
+plot(cars)
+"
+
+cat("```", code, "```", sep = "")
+```
+
+
+Options of R code chunks and inline R code ( [Anleitung](https://bookdown.org/yihui/rmarkdown/r-code.html) ):
+
+- `eval`: Whether to evaluate a code chunk.
+- `echo`: Whether to show the source code in the output document
+- `results`: When set to 'hide', text output will be hidden; when set to 'asis', text output is written “as-is”
+- `collapse`: Whether to merge text output and source code into a single code block in the output
+- `warning`, message, and error: Whether to show warnings, messages, and errors
+- `include`: Whether to include anything from a code chunk in the output document
+- `cache`: Whether to enable caching. If caching is enabled, the same code chunk will not be evaluated the next time the document is compiled (if the code chunk was not modified)
+- `fig.width` and `fig.height`: The (graphical device) size of R plots in inches
+- `out.width` and `out.height`: The output size of R plots in the output document
+- `fig.align`: The alignment of plots. It can be 'left', 'center', or 'right'
+- `fig.cap`: The figure caption.
+- `child`: You can include a child document in the main document.
+
+
+# Einleitung
+
+# Bidungsforschung
+
+# Qualifikationsangebot
+
+## Erwerbbare Qualifikationsniveaus in NRW
+  
+### Allgemeinbildene, berufliche und akademische Abschlüsse
+    
+### KldB-Klassifikation
+    
+### Casmin-Klassifikation
+
+
+## Primar- & Sekundarbereich
+  
+### Allgemeinbildene Schulen
+
+#### Struktur der allgemeinbildenen Schulen
+
+#### Datengrundlage
+
+#### Vorausberechnung der SchülerInnen bis 2040
+
+#### Vorausberechnung der erworbenen Abschlüsse bis 2040
+
+### Berufliche Schulen
+
+#### Struktur der beruflichen Schulen
+
+#### Datengrundlage
+
+#### Vorausberechnung der SchülerInnen bis 2040
+
+#### Vorausberechnung der erworbenen Abschlüsse bis 2040
+
+## Tertiärbereich
+
+### Aufstiegsfortbildung
+
+#### Struktur der Aufstiegsfortbildung
+
+#### Datengrundlage
+
+#### Vorausberechnung der TeilnehmerInnen bis 2040
+
+#### Vorausberechnung der erworbenen Abschlüsse bis 2040
+
+### (Fach-)Hochschulbildung
+
+#### Struktur der (Fach-)Hochschulbildung
+
+#### Datengrundlage
+
+#### Vorausberechnung der Studierenden bis 2040
+
+#### Vorausberechnung der erworbenen Abschlüsse bis 2040
+
+# Qualifikationsnachfrage
+
+## Trends in der Arbeitswelt
+
+## Zukünftige Nachfrage nach Qualifiationen
+
+### Literaturübersicht (Ergebnisse anderer Studien)
+
+### Verwendete Szenarien
+
+#### IHK-FKM
+
+##### Datengrundlage
+
+##### Ergebnisse
+
+#### Fortschreibung vergangender Entwicklungen
+
+##### Datengrundlage
+
+##### Ergebnisse
+
+# Abgleichung von Qualifikationsangebot und -nachfrage
+
+## Abgleich zwischen nachgefragten Qualifikationsniveaus am Arbeitsort und Angebot am Wohnort
+
+## Pendlerströme als Angleichung von Missmatchen
+
+# Fazit
+
+# Anhang
+
+
+
+
+
+# Methodik Qualifikationsangebot
+
+## Primar- & Sekundarbereich
+  
+### Allgemeinbildene Schulen
+
+#### Vorausberechnung der SchülerInnen bis 2040
+
+#### Vorausberechnung der erworbenen Abschlüsse bis 2040
+
+### Berufliche Schulen
+
+#### Vorausberechnung der SchülerInnen bis 2040
+
+#### Vorausberechnung der erworbenen Abschlüsse bis 2040
+
+## Tertiärbereich
+
+### Aufstiegsfortbildung
+
+#### Vorausberechnung der TeilnehmerInnen bis 2040
+
+#### Vorausberechnung der erworbenen Abschlüsse bis 2040
+
+### (Fach-)Hochschulbildung
+
+#### Vorausberechnung der Studierenden bis 2040
+
+#### Vorausberechnung der erworbenen Abschlüsse bis 2040
+
+
+# Methodik Qualifikationsnachfrage
+
+
+# Literatur
