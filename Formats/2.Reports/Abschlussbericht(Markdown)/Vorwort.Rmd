@@ -1,0 +1,23 @@
+---
+title: "Vorwort"
+output: word_document
+bibliography: Literatur.bib
+lang: "de-DE"
+---
+
+```{r setup-vorwort, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Vorwort
+
+Eine der größten Herausforderungen für den Arbeitsmarkt für die kommenden Jahrzehnte wird in fast allen Regionen Deutschlands der demografische Wandel sein. Nach der aktuellen BIBB-IAB Qualifikations- und Berufsprojektion (QuBe-Basisprojektion) wird aufgrund der Alterung der Gesellschaft deutschlandweit die Anzahl an Erwerbspersonen zwischen 2020 und 2040 um ca. 1,8 Millionen Personen zurückgehen, wobei hier Wanderungsgewinne in der Größenordnung von rund 240.000 Personen mit eingerechnet wurden (vgl. Maier et al. 2021). Auf den Arbeitsmärkten wird das jeweilige Arbeitskräfteangebot ein zunehmend limitierender Faktor sein. Gleichzeitig wird davon ausgegangen, dass der Arbeitsmarkt einem starken Strukturwandel unterliegt, insbesondere das warenproduzierende Gewerbe wird Anteile an den Arbeitskräften einbüßen. 
+So sollen bis zum Jahr 2040 rund 3,6 Millionen Arbeitsplätze neu entstehen und zugleich rund 5,3 Millionen im Vergleich zu heute entfallen. Die Ursache für den Wegfall wird vor allem mit dem Rückgang des Arbeitskräfteangebots in Verbindung gebracht. Dieser Rückgang fällt regional unterschiedlich aus: in den östlichen Arbeitsmarktregionen aber auch im Westen Deutschlands wird er eher überdurchschnittlich sein, während in südwestlichen Regionen sogar ein positives Wachstum möglich ist (Bundesministerium für Arbeit und Soziales 2021, S. 69).  
+Durch den Strukturwandel müssen sich Arbeitssuchende zwangsläufig an den Herausforderungen der neuen Arbeitswelt anpassen, es werden zunehmend andere Kompetenzen benötigt. Während der Bedarf an Berufen, die Körperkraft und Fingerfertigkeit erfordern und mit einem eher geringen Qualifikationsniveau in Verbindung stehen, zurückgehen wird, wird der Bedarf an Berufen mit sozial-interaktiven, intellektuellen und methodischen Kompetenzen ansteigen. Bei Letzteren wird in Zukunft mit Rekrutierungsschwierigkeiten gerechnet (Bundesministerium für Arbeit und Soziales 2021, S. 13). Ein wesentlicher Faktor für die zukünftige Entwicklung regionaler Arbeitsmärkte stellt daher neben der Qualifikationsnachfrage das jeweils vorhandene Qualifikationsniveau der Erwerbspersonen vor Ort sowie der Einpendler dar. 
+
+Die bisherigen Vorausberechnungen und Prognosen beziehen sich zumeist auf die Bundesebene und regional allenfalls nur auf die Bundesländerebene. 
+In unserer Studie wollen wir den Versuch unternehmen, vor allem die zukünftige Entwicklung der regionalen Bildungsteilhabe und des qualifikationsspezifischen Arbeitskräfteangebots in Nordrhein-Westfalen, mit Fokus auf dem Ruhrgebiet, darzustellen. Es soll geprüft werden, in welchem Ausmaß in NRW und im Ruhrgebiet zukünftig ein Missverhältnis zwischen der Arbeitskräftenachfrage und dem Arbeitskräfteangebot besteht. 
+Für die Vorausschau des zukünftigen qualifikationsspezifischen Arbeitskräfteangebots wird u.a. eine regionale Schülervorausberechnung für alle allgemeinbildenden und berufsbildenden Schulen vorgenommen. Die Abschätzung der Arbeitskräftenachfrage erfolgt u.a. auf Basis von festgestellten Trends bzw. der Fortschreibung von vergangenen Entwicklungen. 
+
+Die Studie knüpft mit diesem Vorhaben an den Ergebnissen und Erkenntnissen aus unserer Studie **Wege zur Metropole Ruhr** an, welche von der Stiftung Mercator gefördert wurde [vgl. @Schraepler2017]. Während Letzteres vor allem die kleinräumige Entwicklung der sozialen Segregation und Bildungschancen in den Stadtteilen in den letzten 50 Jahre bis zur Gegenwart in dem Blick hatte, soll nun der Blick für die Region in die Zukunft gerichtet werden und auf Basis der Ergebnisse mögliche Konsequenzen und Handlungsempfehlungen abgeleitet werden.  
+
