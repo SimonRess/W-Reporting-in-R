@@ -1,16 +1,17 @@
 ---
-title: Slides
-summary: An introduction to using Wowchemy's Slides feature.
-authors: []
-tags: []
+title: "Slides"
 categories: []
-date: "2019-02-05T00:00:00Z"
+date: '2019-02-05T00:00:00Z'
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
 slides:
-  # Choose a theme from https://github.com/hakimel/reveal.js#theming
-  theme: black
-  # Choose a code highlighting style (if highlighting enabled in `params.toml`)
-  #   Light style: github. Dark style: dracula (default).
   highlight_style: dracula
+  theme: black
+summary: An introduction to using Wowchemy's Slides feature.
+tags: []
+authors: []
 ---
 
 # Create slides in Markdown with Wowchemy

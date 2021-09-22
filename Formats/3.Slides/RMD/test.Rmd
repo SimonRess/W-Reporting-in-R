@@ -10,6 +10,8 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+#library(rmarkdown)
+#render("test.Rmd", output_file = "test_md.md", md_document(preserve_yaml = TRUE))
 ```
 
 ## R Markdown
