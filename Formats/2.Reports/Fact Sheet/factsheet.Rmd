@@ -1,0 +1,70 @@
+---
+title: "Fact Sheet"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Rahmen: 4-8 Seiten Text
+Maximal 3 -4 Absätze pro Seite
+
+## Einleitung
+
+Eine der größten Herausforderungen für den Arbeitsmarkt für die kommenden Jahrzehnte wird in fast allen Regionen Deutschlands der demografische Wandel sein. Nach aktuellen Qualifikationsprojektionen wird aufgrund der Alterung der Gesellschaft deutschlandweit die Anzahl an Erwerbspersonen zwischen 2020 und 2040 um ca. 1,8 Millionen Personen zurückgehen, wobei hier entsprechende Wanderungsgewinne mit eingerechnet wurden. Auf den Arbeitsmärkten wird daher das jeweilige Arbeitskräfteangebot ein zunehmend limitierender Faktor sein.
+
+Die bisherigen Vorausberechnungen und Prognosen zum Qualifikationsangebot und der -nachfrage beziehen sich zumeist auf die Bundesebene und regional allenfalls nur auf die Bundesländerebene. In der von der Stiftung Mercator geförderten Studie *Bildungs- und Qualifikationsraum Ruhr*, wird die zukünftige Entwicklung der regionalen Bildungsteilhabe und des qualifikationsspezifischen Arbeitskräfteangebots in Nordrhein-Westfalen, mit Fokus auf dem Ruhrgebiet, bis 2040 dargestellt und Hinweise gegeben in welchem Verhältnis das zukünftige Arbeitskräfteangebot und die voraussichtliche Qualifikationsnachfrage in NRW und im Ruhrgebiet in Zukunft stehen kann. 
+Die Darstellung der Entwicklung des Qualifikationsangebots erfolgt auf Basis einer **integrierten Vorausberechnung**, die die Bildungsteilnehmerinnen und Bildungsteilnehmer an den allgemeinbildenden Schulen, den beruflichen Schulen einschließlich der Gesundheitsschulen und einer Aufstiegsfortbildung als auch die an den Hochschulen einschließt. 
+
+Auf der Grundlage der aktuellen regionalen Bevölkerungsvorausberechnung werden Aussagen über die Entwicklung des Arbeitskräfteangebots nach *Anforderungsniveau* der *KLassifikation der Berufe 2010* (KldB) (Helfer, Fachkraft, Spezialist, Experte) getroffen.
+
+## Neue Wege bei der Modellierung: Interaktiver Abruf von Zukunfts-Szenarien
+
+In Bezug auf die Modellierung eines Teils des Qualifikationsangebots, der Schülervorausberechnung für den Primar- und Sekundarbereich, werden in der Studie neue Wege gegangen. Erstmals erfolgt die Modellierung nicht, wie sonst bei regionalen Schülervorausberechnungen üblich auf Kreisebene, sondern auf **Schulebene**. Dieses Konzept ermöglicht es die große Heterogenität in der Bildungsbeteiligung innerhalb der Kreise mit zu berücksichtigen. Neben der Darstellung der zukünftigen Entwicklung des regionalen qualifikationsspezifischen Arbeitskräfteangebots unter der aktuellen Bevölkerungsvorausberechnung und den sonst üblichen ceteris paribus Bedingungen werden mögliche Auswirkungen von Änderungen aufgezeigt. Ein politisches Ziel ist es, Bildungsbenachteiligungen abzubauen. Mit dem Modell lässt sich erstmals die Auswirkungen einer Erhöhung der Bildungsbeteiligung, wie etwa der Übergangsquote zum Gymnasium bei Grundschulen in sozial benachteiligtem Umfeld in Bezug auf die Qualifikationsentwicklung aufzuzeigen. Zu diesem Zweck ist auch eine frei zugängliche **Shiny-App** entwickelt worden, die einen interaktiven Abruf ausgewählter Szenarien erlaubt.  
+
+Für die Vorausberechnungen werden nachfolgend in unserer Studie je nach Bildungsbereich unterschiedliche Ebenen und Daten verwendet. Die Tabelle \@ref(tab:EbenenDaten) gibt hierzu einen Überblick.    
+
+
+```{r EbenenDaten, echo=FALSE, tab.cap="Ebenen und Daten für die Vorausberechnung des Qualifikationsangebots und der -nachfrage"}
+Quali <- data.frame(
+                   Qualifikation = c("Angebot","","","","","","Nachfrage","Match"),
+                   Bereiche = c("Primarbereich","Sekundarbereich","Berufliche Schulen","Gesundheitsschulen","Aufstiegsfortbildung","Hochschulen", "KldB: Berufsbereiche u. Anforderungsniveau","Angebot und Nachfrage"), 
+                   Vorausberechnung.auf = c("Schulebene","Schulebene","Kreisebene","Kreisebene","Kreisebene","Regionen","Regionen","Regionen"),
+                   Datenbasis = c("Schulstatistik","Schulstatistik","Schulstatistik","Schulen des Gesundheitswesens","Berufsbildungsstatistik","Hochschulstatistik","Mikrozensus",""))
+
+ft <- flextable(Quali, defaults = TRUE)
+
+ft <- set_header_labels(ft, Vorausberechnung.auf = "Vorausberechnung auf")
+
+ft <- align_text_col(ft, align = "left")
+ft <- align_nottext_col(ft, align = "right")
+
+ft <- footnote(ft, i = 1, j = 1,
+            value = as_paragraph(
+              "eigene Zusammenstellung"),
+#           ref_symbols = "a"),
+            part = "header")
+
+ft <- autofit(ft, add_w = 0.1, add_h = 0.1, part = c("body", "header"))
+
+ft
+```
+
+## Ergebnisse zur Qualifikationsentwicklung
+
+### Vorausberechnungen der Schülerinnen und Schüler in den allgemeinbildenden Schulen
+
+#### Vorausberechnungen der Abschlüsse an allgemeinbildenden Schulen
+
+### Vorausberechnungen der beruflichen Schulen und Schulen des Gesundheitswesens
+
+### Vorausberechnungen der Aufstiegsfortbildung
+
+### Vorausberechnungen der Studienabschlüsse
+
+## Qualifikationsnachfrage
+
+## Match von Qualifikationsangebot und -nachfrage
+
+## Fazit

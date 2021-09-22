@@ -1,0 +1,113 @@
+%First Steps needed to compile pdf-files
+
+  %1. Install knitr for compiling Rnw files
+    %if(!require("knitr")) install.packages("knitr")
+    %library("knitr")
+    
+  %2. Set Options for "PDF Generation" from Sweave files
+     %Tools -> Global Options -> Swaeve -> Weave Rnw-files using: knitr
+     %Tools -> Global Options -> Swaeve -> Typeset LaTeX into PDF using: pdfLaTex
+  
+  %3. Install TinyTex as LaTeX distribution / afterwards install missing packages
+    %Website: https://yihui.org/tinytex/
+    %if(!require("tinytex")) install.packages('tinytex')
+    %library(tinytex)
+    %options(tinytex.verbose = TRUE)
+    %options(tinytex.clean = FALSE)
+    %tinytex::install_tinytex()
+    %packages <- c("biblatex", "logreq", "grfext", #usage of biblatex -> Citation&Bibliography
+    %               "csquotes", # Usage of german quotation marks
+    %                "xpatch", # Extending etoolbox patching commands
+    %"babel")
+    %tinytex::install_tinytex(extra_packages = packages)
+    %tinytex::install_tinytex(extra_packages = "columns")
+    %tinytex::tlmgr_install("collection-langgerman") # Install german language package  
+    % Uninstall if needed: tinytex::uninstall_tinytex()
+    
+  %4. If errors because of missing packages occur, run code below with error message to install missing packages -> https://bookdown.org/yihui/rmarkdown-cookbook/install-latex-pkgs.html
+    %tinytex::parse_install(text = "! LaTeX Error: File `biblatex.sty' not found.")
+    % or directly install missing package:
+    %tinytex::tlmgr_install("csquotes")
+    %tlmgr_install("csquotes")
+
+
+\documentclass[12pt,
+  a4paper,
+  final,
+  listof=totoc,            % Tabellen & Abbildungsverzeichnis ins TOC
+  bibliography=totoc,      % Bibliographie ins TOC (Table of contents)
+  %bibtotocnumbered,    % Bibliographie im TOC nummeriert
+  %liststotocnumbered % Alle Verzeichnisse im TOC nummeriert
+  headsepline % Linie unter der Kopfzeile (auf allen Seiten auf denen kein chapter beginnt)
+]{article} % -> scrreprt
+
+
+%Loading packages & defining settings
+
+  %------------------------%
+  %--- General Settings ---%
+  %------------------------% 
+  
+    %Text
+      %encoding
+        \usepackage[utf8]{inputenc} % direct entry of special characters such as German umlauts -> use with "pdfLaTex", not with "XeLaTex"
+        \usepackage[T1]{fontenc} %Together with inputence-package: separation of words with umlauts
+      %German-specific commands
+      %\usepackage{german}
+        \usepackage[ngerman]{babel}
+      %\usepackage[ngerman]{babel} % für deutsche Silbentrennung
+      \usepackage[german=quotes]{csquotes} %Die Darstellung der Anführungszeichen festlegen: "Deutsche Variante"
+  
+
+  %------------------------------------------%
+  %--- Bibliography / citation usw. ---%
+  %------------------------------------------%
+
+    \usepackage[backend=bibtex, 
+                sortcites,  % Zitate sortieren
+                maxcitenames = 2, % maximale Anzahl an Autoren und Hrg. Namen
+                maxbibnames = 10, % Anzahl Autoren in Literaturverzeichnis setzen
+                citetracker=false, % verhindert, dass wiederholte Autoren durch --- ersetzt werden
+                style=authoryear-icomp, % Biblatex bibliography styles: https://www.overleaf.com/learn/latex/biblatex_bibliography_styles
+                doi=false, % Keine DOI ins Literaturverzeichnis
+                isbn=false, %Keine ISBN ins Literaturverzeichnis
+                url=false]{biblatex}
+                
+    %change "u.a." to "et al."              
+      %\DefineBibliographyStrings{ngerman}{andothers={et\ al\adddot}} 
+  
+    %Load Bibliography
+      \bibliography{Literatur}
+      % or \addbibresource{Literatur.bib} % Bibliography as .bib-file
+      
+    %author & year bolt in bibliography
+      \usepackage{xpatch} %Documentation: https://ftp.rrze.uni-erlangen.de/ctan/macros/latex/contrib/xpatch/xpatch.pdf
+      \xpretobibmacro{author}{\mkbibbold\bgroup}{}{}
+      \xapptobibmacro{author}{\egroup}{}{}
+      \xpretobibmacro{bbx:editor}{\mkbibbold\bgroup}{}{}
+      \xapptobibmacro{bbx:editor}{\egroup}{}{}
+  
+    %Colon after the year in the bibliography
+      \renewcommand*{\labelnamepunct}{\mkbibbold{\addcolon\space}}
+       
+                
+  %------------------------------------------%
+  %--- Author, Date, Title  -----------------%
+  %------------------------------------------%  
+  
+    \author{Simon Ress}
+    \title{Bildungs- und Qualifikationsraum Ruhr}
+    \date{\today}
+
+\begin{document}
+
+test äöü "Zitat" \textcite{Meil.2016} ist ob ebd. funktioniert: \textcite{Meil.2016}
+
+
+\begin{quote}"[...]the current study shows that SRH [self-rated Health] correlates with future hospitalizations, suggesting that self-rated reports contain information about health characteristics that later on causes hospitalization."~\parencite[S.~511]{Amlinger.Juni2017}\end{quote}
+
+
+%bibliography
+  \printbibliography 
+
+\end{document}
