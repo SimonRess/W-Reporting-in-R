@@ -1,0 +1,68 @@
+---
+title: "Untitled"
+author: "Simon Ress"
+date: "09.09.2021"
+
+#Enable two column-option on slides
+classoption: 
+- twocolumn
+#Output options and formatting
+output:
+  beamer_presentation: default
+  ioslides_presentation: default
+  slidy_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+#Create .md-file from .rmd-files (needs to be saved in same folder [!!not subfolder!!], because of paths)
+  #library(rmarkdown)
+  #render("test.Rmd", output_file = "test_md.md", md_document(preserve_yaml = TRUE))
+```
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
+## Two columns
+
+Here is some text above
+
+
+
+:::::::::::::: {.columns}
+::: {.column width="40%"}
+
+contents 1...
+
+:::
+::: {.column width="60%"}
+
+contents 2...
+
+:::
+::::::::::::::
+
+
+
+and here some text below
