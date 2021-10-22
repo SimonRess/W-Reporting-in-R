@@ -1,6 +1,8 @@
 ---
 title: |
+       <center>
        ![](Slides_files/RUB.jpg){width=2.5in}
+       </center>
 subtitle:  "The Influence of the German Statutory Minimum Wage's Introduction on Individuals' Health"
 author: "Simon Ress | Ruhr-Universität Bochum"
 institute: "Conference: 56. Jahrestagung der DGSMP, Leipzig, 2021"
@@ -17,7 +19,7 @@ output:
 header-includes:
   - \usetheme[numbering=fraction]{metropolis}
 #Define footer:
-  - \definecolor{beaublue}{rgb}{0.74, 0.83, 0.9}
+  - \definecolor{beaublue}{RGB}{182, 203, 201} #{0.74, 0.83, 0.9}
   - \setbeamertemplate{frame footer}{\tiny{\textcolor{beaublue}{Conference 56. Jahrestagung der DGSMP, 2021 | SIMON RESS}}}
 #hide footer on title page:
   - |
@@ -58,7 +60,21 @@ header-includes:
     \inserttocsection\par%
     }
     \setbeamertemplate{subsection in toc}{
-    \leavevmode\leftskip=2.5em\inserttocsubsection\par}
+    \leavevmode\leftskip=2.5em\inserttocsubsection\par     }
+#Adjust representation of chunks
+  #Reduce space between code chunks and code output
+  - |
+    \setlength{\OuterFrameSep}{-4pt}
+    \makeatletter
+    \preto{\@verbatim}{\topsep=-10pt \partopsep=-10pt }
+    \makeatother
+  #Change background-color of source-code
+  - \definecolor{shadecolor}{RGB}{240,240,240}
+  #Set a frame around the results
+  - | 
+    \let\verbatim\undefined
+    \let\verbatimend\undefined
+    \DefineVerbatimEnvironment{verbatim}{Verbatim}{frame=single, rulecolor=\color{shadecolor}, framerule=0.3mm,framesep=1mm}
 ---
 
 
@@ -67,7 +83,20 @@ header-includes:
 ## Content
 \tableofcontents[]
 
-# Level I
+# Metropolis theme
+
+## Main Repos
+
+- [Official GitHub Repo of Metropolis](https://github.com/matze/mtheme)
+  (formerly mtheme); older version in TeXLive 
+- [My GitHub Repo for a local Ubuntu package of Metropolis](https://github.com/eddelbuettel/pkg-latex-metropolis) -- formerly mtheme
+- [Manuel](https://mirror.physik.tu-berlin.de/pub/CTAN/macros/latex/contrib/beamer-contrib/themes/metropolis/doc/metropolistheme.pdf) 
+
+## Customization
+
+test
+
+# Examplary usage
 
 Test
 
@@ -100,7 +129,7 @@ summary(cars)
 
 
 
-## Two columns
+## Two column layout
 
 Here is some text above which goes over to whole slide
 
@@ -126,3 +155,41 @@ Here is some text above which goes over to whole slide
 
 
 and here some text below which goes over to whole slide
+
+
+<!-- Create new page without title -->
+_ _ _  
+
+\LARGE Breakout page
+
+# Figures caption
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{Slides_files/RUB} 
+
+}
+
+\caption{Figure: Here is a really important caption.}\label{fig:unnamed-chunk-1}
+\end{figure}
+
+## Using LaTeX Parts: Blocks
+
+As one example of falling back into \LaTeX, consider the example of
+three different block environments are pre-defined and may be styled
+with an optional background color.
+
+<!-- this sets the background -->
+\metroset{block=fill} 
+
+\begin{block}{Default}
+  Block content.
+\end{block}
+
+\begin{alertblock}{Alert}
+  Block content.
+\end{alertblock}
+
+\begin{exampleblock}{Example}
+  Block content.
+\end{exampleblock}

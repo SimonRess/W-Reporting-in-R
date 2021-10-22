@@ -1,13 +1,13 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.19)  12 OCT 2021 12:52
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.10.21)  22 OCT 2021 13:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Slides.tex
 (./Slides.tex
 LaTeX2e <2021-06-01> patch level 1
-L3 programming layer <2021-08-27> (c:/Users/Simon/AppData/Roaming/TinyTeX/texmf
+L3 programming layer <2021-10-18> (c:/Users/Simon/AppData/Roaming/TinyTeX/texmf
 -dist/tex/latex/beamer/beamer.cls
-Document Class: beamer 2021/05/26 v3.63 A class for typesetting presentations
+Document Class: beamer 2021/10/18 v3.64 A class for typesetting presentations
 
 (c:/Users/Simon/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerbasem
 odes.sty
@@ -831,11 +831,11 @@ Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 (c:/Users/Simon/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unico
 de-math.sty
 (c:/Users/Simon/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2021-08-27 L3 programming layer (loader) 
+Package: expl3 2021-10-18 L3 programming layer (loader) 
 
 (c:/Users/Simon/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backen
 d-xetex.def
-File: l3backend-xetex.def 2021-08-04 L3 backend support: XeTeX
+File: l3backend-xetex.def 2021-10-18 L3 backend support: XeTeX
 (|extractbb --version)
 \c__kernel_sys_dvipdfmx_version_int=\count334
 \l__color_backend_stack_int=\count335
@@ -903,7 +903,7 @@ LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 de-math-table.tex)))
 (c:/Users/Simon/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.
 sty
-Package: fancyvrb 2021/08/12 v3.8 verbatim text (tvz,hv)
+Package: fancyvrb 2021/10/15 v3.9 verbatim text (tvz,hv)
 \FV@CodeLineNo=\count355
 \FV@InFile=\read3
 \FV@TabBox=\box78
@@ -1053,39 +1053,39 @@ line 95.
 ))
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\includegraphics' on input line 193.
+(hyperref)                removing `\includegraphics' on input line 201.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\textheight' on input line 193.
+(hyperref)                removing `\textheight' on input line 201.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 193.
+(hyperref)                removing `subscript' on input line 201.
 
 (./Slides.aux)
 \openout1 = `Slides.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 201.
+LaTeX Font Info:    ... okay on input line 201.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 201.
+LaTeX Font Info:    ... okay on input line 201.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 201.
+LaTeX Font Info:    ... okay on input line 201.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 201.
+LaTeX Font Info:    ... okay on input line 201.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 201.
+LaTeX Font Info:    ... okay on input line 201.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 201.
+LaTeX Font Info:    ... okay on input line 201.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 201.
+LaTeX Font Info:    ... okay on input line 201.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 201.
+LaTeX Font Info:    ... okay on input line 201.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 201.
+LaTeX Font Info:    ... okay on input line 201.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 201.
+LaTeX Font Info:    ... okay on input line 201.
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1120,7 +1120,7 @@ LaTeX Font Info:    ... okay on input line 193.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 193.
+Package hyperref Info: Link coloring OFF on input line 201.
 
 (c:/Users/Simon/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.s
 ty
@@ -1136,9 +1136,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count368
 )
-LaTeX Info: Redefining \ref on input line 193.
-LaTeX Info: Redefining \pageref on input line 193.
-LaTeX Info: Redefining \nameref on input line 193.
+LaTeX Info: Redefining \ref on input line 201.
+LaTeX Info: Redefining \pageref on input line 201.
+LaTeX Info: Redefining \nameref on input line 201.
 (./Slides.out) (./Slides.out)
 \@outlinefile=\write6
 \openout6 = `Slides.out'.
@@ -1169,19 +1169,19 @@ tor-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 193.
+(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 201.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 193.
+(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 201.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 193.
+(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 201.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 193.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 201.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 193.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 201.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 193.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 201.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 193.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 201.
 
 Package fontspec Info: latinmodern-math scale = 1.03015890977869.
 
@@ -1210,7 +1210,7 @@ allCapsFont={},Script=Math,BoldFont={latinmodern-math.otf}].
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 11.28015pt on input line 193.
+(Font)              scaled to size 11.28015pt on input line 201.
 
 Package fontspec Info: latinmodern-math scale = 1.03015890977869.
 
@@ -1249,18 +1249,18 @@ dern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 11.28015pt on input line 193.
+(Font)              scaled to size 11.28015pt on input line 201.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 193.
+(Font)              `operators' in the math version `normal' on input line 201.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input
- line 193.
+ line 201.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 193.
+(Font)              `operators' in the math version `bold' on input line 201.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on inpu
-t line 193.
+t line 201.
 
 Package fontspec Info: latinmodern-math scale = 1.03015890977869.
 
@@ -1347,15 +1347,15 @@ t=math;language=dflt;"
 (fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 193.
+(Font)              `symbols' in the math version `normal' on input line 201.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
-t line 193.
+t line 201.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 193.
+(Font)              `symbols' in the math version `bold' on input line 201.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on inpu
-t line 193.
+t line 201.
 
 Package fontspec Info: latinmodern-math scale = 1.03015890977869.
 
@@ -1424,22 +1424,22 @@ t=math;language=dflt;"
 (fontspec)             =6.7681pt\relax \fontdimen 13\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 1
-93.
+(Font)              `largesymbols' in the math version `normal' on input line 2
+01.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
-t line 193.
+t line 201.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 193
+(Font)              `largesymbols' in the math version `bold' on input line 201
 .
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on inpu
-t line 193.
+t line 201.
 (./Slides.nav)
 File: Slides_files/RUB.jpg Graphic file (type bmp)
 <Slides_files/RUB.jpg>
 
-Overfull \vbox (47.28792pt too high) detected at line 194
+Overfull \vbox (47.28792pt too high) detected at line 202
  []
 
 [1
@@ -1448,32 +1448,32 @@ Overfull \vbox (47.28792pt too high) detected at line 194
 
 ]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.8961pt on input line 202.
+(Font)              scaled to size 7.8961pt on input line 210.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.64008pt on input line 202.
+(Font)              scaled to size 5.64008pt on input line 210.
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-02.
+10.
 (c:/Users/Simon/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 11.28131pt on input line 202.
+(Font)              scaled to size 11.28131pt on input line 210.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.89691pt on input line 202.
+(Font)              scaled to size 7.89691pt on input line 210.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.64066pt on input line 202.
+(Font)              scaled to size 5.64066pt on input line 210.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.27914pt on input line 202.
+(Font)              scaled to size 11.27914pt on input line 210.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.8954pt on input line 202.
+(Font)              scaled to size 7.8954pt on input line 210.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.63957pt on input line 202.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 202
+(Font)              scaled to size 5.63957pt on input line 210.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 210
 .
 (c:/Users/Simon/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 202
+LaTeX Font Info:    Trying to load font information for U+msb on input line 210
 .
 (c:/Users/Simon/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1485,24 +1485,41 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [6
 
+] [7
+
+] [8
+
+] [9
+
 ]
 \openout4 = `Slides.vrb'.
 
-(./Slides.vrb) [7
+(./Slides.vrb) [10
 
 ]
 File: Slides_files/figure-beamer/pressure-1.pdf Graphic file (type pdf)
 <use Slides_files/figure-beamer/pressure-1.pdf>
 
-Overfull \vbox (6.06335pt too high) detected at line 245
+Overfull \vbox (6.06335pt too high) detected at line 276
  []
 
-[8
+[11
 
 ]
 File: Slides_files/figure-beamer/AirPassengers-1.pdf Graphic file (type pdf)
 <use Slides_files/figure-beamer/AirPassengers-1.pdf>
-[9
+[12
+
+] [13
+
+] [14
+
+]
+File: Slides_files/RUB.jpg Graphic file (type bmp)
+<Slides_files/RUB.jpg>
+[15
+
+] [16
 
 ]
 \tf@nav=\write7
@@ -1516,15 +1533,15 @@ File: Slides_files/figure-beamer/AirPassengers-1.pdf Graphic file (type pdf)
 
 (./Slides.aux)
 Package rerunfilecheck Info: File `Slides.out' has not changed.
-(rerunfilecheck)             Checksum: F23FDB1B406530860B1D57BAB2CE2D3B;228.
+(rerunfilecheck)             Checksum: 22028B5D876E6D15E130B66DFE546543;515.
  ) 
 Here is how much of TeX's memory you used:
- 30506 strings out of 478492
- 625430 string characters out of 5860435
- 1055021 words of memory out of 5000000
- 50204 multiletter control sequences out of 15000+600000
- 406981 words of font info for 61 fonts, out of 8000000 for 9000
+ 30660 strings out of 478472
+ 629193 string characters out of 5859791
+ 1059182 words of memory out of 5000000
+ 50369 multiletter control sequences out of 15000+600000
+ 407005 words of font info for 64 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  101i,13n,120p,1825b,739s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Slides.pdf (9 pages).
+Output written on Slides.pdf (16 pages).
