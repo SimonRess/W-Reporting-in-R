@@ -3,7 +3,6 @@
 - [R Markdown formats (Documents, Presentations, Dashboards, Websites, Notebooks)](https://r4ds.had.co.nz/r-markdown-formats.html)
 
 
-
 # Beamer themes
  
 ## Lists/Overview
@@ -21,3 +20,8 @@
 -[binb (R-pkg, includes metroplis)]
   - [Github](https://github.com/eddelbuettel/binb)
   - [CRAN](https://cran.r-project.org/web/packages/binb/index.html)
+  
+  
+# Formatation
+- [Insert pictures](https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown/25167279)
+- [Pimp my RMD: a few tips for R Markdown](https://holtzy.github.io/Pimp-my-rmd/)
