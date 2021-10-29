@@ -3,3 +3,6 @@ https://rpruim.github.io/s341/S19/from-class/MathinRmd.html
 
 Overview of knitr by yihui:
 https://yihui.org/knitr/
+
+- [Document Code with R Markdown](https://www.neonscience.org/resources/learning-hub/tutorials/rmd-code-intro)
+- [R Markdown](https://www.is.uni-freiburg.de/ressourcen/computational-economics/r_markdown.pdf)
