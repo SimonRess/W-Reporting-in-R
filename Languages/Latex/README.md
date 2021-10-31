@@ -19,5 +19,8 @@
   
 # Formatation
 
+## Mathematical expressions
+- [Subscripts and superscripts](https://de.overleaf.com/learn/latex/Subscripts_and_superscripts)
+
 ## Color
 - [LATEX Color](http://latexcolor.com/)
