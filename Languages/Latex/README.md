@@ -15,3 +15,9 @@
   - [CTAN](https://www.ctan.org/pkg/beamertheme-metropolis)
   - [Metropolis-themed RMarkdown template](https://github.com/eddelbuettel/samples-rmarkdown-metropolis)
   -[binb (not needed)](https://github.com/eddelbuettel/binb)
+ 
+  
+# Formatation
+
+## Color
+- [LATEX Color](http://latexcolor.com/)
