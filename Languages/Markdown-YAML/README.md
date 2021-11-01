@@ -23,5 +23,6 @@
   
 # Formatation
 - [Markdown-Spickzettel](https://support.squarespace.com/hc/de/articles/206543587-Markdown-Spickzettel)
+- [Rendering-PowerPoint-Presentations-with-the-RStudio](https://support.rstudio.com/hc/en-us/articles/360004672913-Rendering-PowerPoint-Presentations-with-the-RStudio-IDE)
 - [Insert pictures](https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown/25167279)
 - [Pimp my RMD: a few tips for R Markdown](https://holtzy.github.io/Pimp-my-rmd/)  
