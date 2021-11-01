@@ -21,7 +21,7 @@
   - [Github](https://github.com/eddelbuettel/binb)
   - [CRAN](https://cran.r-project.org/web/packages/binb/index.html)
   
-  
 # Formatation
+- [Markdown-Spickzettel](https://support.squarespace.com/hc/de/articles/206543587-Markdown-Spickzettel)
 - [Insert pictures](https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown/25167279)
-- [Pimp my RMD: a few tips for R Markdown](https://holtzy.github.io/Pimp-my-rmd/)
+- [Pimp my RMD: a few tips for R Markdown](https://holtzy.github.io/Pimp-my-rmd/)  
